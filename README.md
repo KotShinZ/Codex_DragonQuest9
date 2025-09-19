@@ -1,0 +1,2 @@
+# Codex_DragonQuest9
+Codexにtypescriptでドラゴンクエスト9を作らせます。

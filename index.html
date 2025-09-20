@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Tetris</title>
+    <link rel="icon" type="image/png" href="https://tetris.com/favicon.ico" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <main class="playfield">
+        <canvas id="board" width="360" height="720" aria-label="ゲームフィールド"></canvas>
+        <div id="overlay" class="overlay hidden" role="status" aria-live="polite"></div>
+      </main>
+      <aside class="sidebar" aria-label="ゲーム情報">
+        <section class="panel">
+          <h2>ステータス</h2>
+          <dl class="stats">
+            <div>
+              <dt>スコア</dt>
+              <dd id="score">0</dd>
+            </div>
+            <div>
+              <dt>レベル</dt>
+              <dd id="level">1</dd>
+            </div>
+            <div>
+              <dt>ライン</dt>
+              <dd id="lines">0</dd>
+            </div>
+            <div>
+              <dt>コンボ</dt>
+              <dd id="combo">-</dd>
+            </div>
+            <div>
+              <dt>Back-to-Back</dt>
+              <dd id="back-to-back">0</dd>
+            </div>
+          </dl>
+        </section>
+        <section class="panel">
+          <h2>ネクスト</h2>
+          <canvas id="next" width="160" height="320" aria-label="次のミノ"></canvas>
+        </section>
+        <section class="panel">
+          <h2>ホールド</h2>
+          <canvas id="hold" width="160" height="160" aria-label="ホールドミノ"></canvas>
+        </section>
+        <section class="panel instructions">
+          <h2>操作方法</h2>
+          <ul>
+            <li>← → : ミノ移動</li>
+            <li>↑ / X / S : 右回転</li>
+            <li>Z / A : 左回転</li>
+            <li>↓ : ソフトドロップ</li>
+            <li>スペース : ハードドロップ</li>
+            <li>Shift / C : ホールド</li>
+            <li>P / Esc : ポーズ</li>
+          </ul>
+        </section>
+        <button id="restart" type="button" class="primary">ニューゲーム</button>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

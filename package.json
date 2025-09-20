@@ -1,0 +1,22 @@
+{
+  "name": "codex_dragonquest9",
+  "version": "1.0.0",
+  "description": "High quality Tetris built with TypeScript and Vite.",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "tetris",
+    "game",
+    "typescript"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.6"
+  }
+}
